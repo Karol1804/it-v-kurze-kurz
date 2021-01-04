@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="SK">
+	<head>
+		<meta charset="utf-8">
+		<title>Rebricek filmov</title>
+		
+		<!--Stylovanie celej stranky -->
+		<style>
+	
+		body{
+			  background-color:white ;
+			  
+		}
+		main{
+			padding: 0 20px 20px 20px ;
+			background-color: rgb(241, 232, 221);
+	
+			
+		}
+
+		a{
+		background-color:#ccccb3;
+		padding: 15px;
+		text-transform: uppercase;
+		}
+
+		nav{
+			text-align: right;
+			padding-top: 30px;
+		}
+
+	    a:hover{
+		cursor: pointer;
+        background: #cc99ff;
+		padding: 15px;
+		}	
+	
+		 h1{
+			 text-align: center;
+			 padding: 10px 0;
+			 text-decoration: underline;
+			 text-transform: uppercase;
+		 }
+		 h2{
+			 text-decoration: underline red ;
+		     font-family: cursive;
+		 }
+		 table{
+			 margin: 40px 0 0 0;
+			 background-color: white;
+		 }
+		
+		 table, th, td {
+           border: 1px solid black;
+           } 
+		   
+          th{ 
+		  color: red
+		  }
+		  
+		  p{
+		  display: inline-block;
+		  padding: 0px 120px;
+		  font-family: cursive;
+		  }
+		  audio{
+			  margin: 0 0 30px 280px;
+			  border: none;
+			  
+		  }
+		   audio:hover, audio:focus, audio:active
+			{
+			-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+			-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+			box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05);
+			border-radius: 10px;
+			}
+
+           figure{
+			   margin: 0;
+		   }
+
+            /* Trieda(tooltip) ktora zobrazi po prejdeni nazvu filmu obrazok hlav.hrdinu s jeho menom */
+		   .tooltip {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted black;
+			
+			}
+
+			.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 100px;
+			height: 120px;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 7px 0;
+			opacity: 0;
+			
+		
+		
+
+			/* Poziicia tooltipu */
+	        position: absolute;
+			z-index: 1;
+			top: 25px;
+			left: 25%;
+			}
+
+		    .tooltip:hover .tooltiptext  {
+			visibility: visible;
+			animation-name: opacity;
+            animation-duration: 10s;
+			
+			
+			}
+		 
+		 	/* The animation tooltip table*/
+		   @keyframes opacity{
+			10%   {opacity: 0;}
+            20%  {opacity: 0.3;}
+            30%  {opacity: 0.6;}
+            40%  {opacity: 0.9;}
+            50% {opacity: 1;}
+			60% {opacity: 1;}
+			70% {opacity: 0.9;}
+			80% {opacity: 0.6;}
+			90% {opacity: 0.3;}
+			100% {opacity: 0;}
+			
+			
+        }
+		  
+		  
+		  .riadok{
+		  background-color: #ccccb3;
+		  }
+		  
+		  .sirka{
+		  width: 600px;
+		  }
+		  
+		  .floatLeft{
+		  float:left;
+		  }
+		  
+		  .clearFix{
+			clear: both;
+		  }
+		  
+		  </style>
+		
+	</head>
+
+		
+		<body>
+			<main>
+				
+				<!-- Odkaz na hlavnu stranku-->
+				<header>
+					<nav>
+						<a href="index.html">Domov</a>
+			        </nav>
+		        </header>
+				
+		
+		
+				<!--Tabulka 20 naj filmov podla  https://www.csfd.cz/zebricky/nejlepsi-filmy -->
+				<table>
+					<tr>
+						<th>Poradie</th>
+						<th>Názov filmu</th>
+						<th>Rok vydania</th>
+						<th>Hodnotenie v percentách</th>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">1</td>
+						<td class="tooltip">
+							<span class="tooltiptext" style="background-image: url(img/tim\ robins.jpg);"  >Tim Robbins</span>Vykoupení z věznice Shawshank</td>
+						<td>1994</td>
+						<td style="color:green;">95.3&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">2</td>
+						<td class="tooltip">
+							<span class="tooltiptext" style="background-image: url(img/tom\ hanks.jpg);">Tom Hanks</span>Forrest Gump</td>
+						<td>1994</td>
+						<td style="color:green;">94.5&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">3</td>
+						<td class="tooltip">
+							<span class="tooltiptext" style="background-image: url(img/tom\ hanks.jpg);">Tom Hanks</span>Zelená míle</td>
+						<td>1999</td>
+						<td style="color:green;">92.8&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">4</td>
+						<td class="tooltip">
+							<span class="tooltiptext" style="background-image: url(img/jack\ nicolson.jpg);">Jack Nicholson</span>Přelet nad kukaččím hnízdem</td>
+						<td>1975</td>
+						<td style="color:green;">92.5&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;"> 5</td>
+						<td class="tooltip">
+							<span class="tooltiptext" style="background-image: url(img/brad\ pitt.jpg);">Brad Pitt</span>Sedm </td>
+						<td>1955</td>
+						<td style="color:green;">92.4&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">6</td>
+						<td>Schindlerův seznam</td>
+						<td>1993</td>
+						<td style="color:green;">92.3&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">7</td>
+						<td>Kmotr</td>
+						<td>1972</td>
+						<td>91.8&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">8</td>
+						<td>Nedotknutelní</td>
+						<td>2011</td>
+						<td>91.3&#37;</td>
+					</tr>
+					
+					
+					<tr>
+						<td style="text-align:right;">9</td>
+						<td>Dvanáct rozhněvaných mužů </td>
+						<td>1957</td>
+						<td>91.4&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">10</td>
+						<td>Pelíšky</td>
+						<td>1999</td>
+						<td>91.2&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">11</td>
+						<td>Terminátor 2: Den zúčtování</td>
+						<td>1991</td>
+						<td>90.8&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">12</td>
+						<td>Kmotr II (</td>
+						<td>1974</td>
+						<td>90,8&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">13</td>
+						<td>Pulp Fiction: Historky z podsvětí </td>
+						<td>1994</td>
+						<td>90,7&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">14</td>
+						<td>Tenkrát na Západě</td>
+						<td>1968</td>
+						<td>90.6&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">15</td>
+						<td>Pán prstenů: Společenstvo Prstenu </td>
+						<td>2001</td>
+						<td>90.5&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">16</td>
+						<td>Pán prstenů: Návrat krále </td>
+						<td>2003</td>
+						<td>90.4&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">17</td>
+						<td>Mlčení jehňátek</td>
+						<td>1991</td>
+						<td>90.5&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">18</td>
+						<td>Temný rytí</td>
+						<td>2008</td>
+						<td>90.3&#37;</td>
+					</tr>
+					
+					<tr>
+						<td style="text-align:right;">19</td>
+						<td>Gran Torino</td>
+						<td>2008</td>
+						<td>90.3&#37;</td>
+					</tr>
+					
+					<tr class="riadok">
+						<td style="text-align:right;">20</td>
+						<td>Matrix </td>
+						<td>1999</td>
+						<td>90.1&#37;</td>
+					</tr>
+				
+				</table>
+			
+				<br>
+			
+				<h1> Top film: Vykoupení z věznice Shawshank  </h1>
+			
+				<!--Obrazok naj filmu -->
+				<figure class="floatLeft">
+				<img  src="https://cdn.alza.sk/ImgW.ashx?fd=f3&cd=AVMB0217" alt="Vykoupení z věznice Shawshank">
+				<figcaption>Obrázok k filmu</figcaption>
+				</figure>
+				
+				<!--Popis k naj filmu -->
+				<div style="padding-top: 100px; background-color: bisque;" >
+					<h2 style="text-align: center;">Popis filmu:</h2>
+					<p style="padding-bottom: 54px;" class="sirka">
+					Strach dělá z lidí vězně. Naěje jim dává křídla. Film natočený podle novely Stephena Kinga. Strhující příběh o přátelství, naději a moudrosti s velmi výraznými hereckými i charakterovými osobnostmi. Andy Dufresne (Tim Robbins) přichází do vězení v Shawshanku jako nový vězeň podezřelý z vraždy. Spřátelí se s doživotně odsouzeným Redem (Morgan Freeman) a společně se snaží přežít v nelidském prostředí vězeňského systému. Odmítají upadnout do rezignace a dodávají naději sobě i spoluvězňům. Film získal mnoho ocenění filmové kritiky a díky svému hluboce humánnímu poselství, skvělým hereckým výkonům a působivému zpracování byl 7 x nominován na Oscara - za nejlepší film, herce v hlavní roli (Morgan Freeman), nejlepší scénář, kameru, hudbu, střih a zvuk.(oficiální text distributora)
+					</p>
+                <!--Audio prehravac nastaveny na autoplay--> 
+					<audio controls autoplay>
+						<source src="audio/06 IF I DIDNT CARE.mp3" type="audio/mpeg" >
+					</audio>
+					
+				</div>
+				<div class="clearFix"></div>
+				
+			</main>
+	
+		</body>
+		
+</html>

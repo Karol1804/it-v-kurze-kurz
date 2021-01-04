@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="SK">
+	<head>
+		<meta charset="utf-8">
+		<title>Pridaj recenziu</title>
+		
+		<!--Stylovanie celej stranky -->
+		<style>
+		body{
+			background-image: url(img/backround1.png);
+			
+		}
+		nav{
+			text-align: right;
+		}
+		
+		form{
+		  background-color:  #ccffff;
+		  width: 50%;
+		  margin: 80px auto;
+		}
+		
+		
+		h1{ 
+		padding-top: 20px;
+		}
+		
+		div{
+		 margin: 30px 15px;
+		}
+		
+		.full-width{
+		  width: 100%;
+		}
+		button{
+		 width: 250px;
+		 margin: 20px 0 40px 180px;
+		 padding: 10px;
+		 border: none;
+		 text-transform: uppercase;
+		 background-color: #80ffaa;
+		}
+		
+		 button:hover {
+            cursor: pointer;
+            background: #cc99ff;
+            border: 1px solid #ff0000;
+			color: #ff0000;
+        }
+		a{
+		background-color:#ccccb3;
+		padding: 15px;
+		text-transform: uppercase;
+
+		}
+	    a:hover{
+		cursor: pointer;
+        background: #cc99ff;
+		padding: 15px;
+		}
+	    
+		article{
+			position: relative;
+			animation-name: example;
+            animation-duration: 10s;
+  			animation-timing-function: linear;
+  			animation-delay: 2s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+
+			
+		}
+		article>div{
+			position: absolute;
+		}
+
+		@keyframes example {
+			0%   {left:0px; top:0px;}
+			25%  {left:1200px; top:0px;}
+			50%  {left:1200px; top:800px;}
+			75%  {left:0px; top:800px;}
+			100% {left:0px; top:0px;}
+			}
+	    
+		
+		  
+		</style>
+		
+	</head>
+	
+	<body>
+	<br>
+	
+	<!-- Odkaz na hlavnu stranku-->
+	    <nav>
+			<a style="margin-left: 30px;" href="index.html">Domov</a>
+		</nav>
+		
+		<article style="padding-bottom: 40px;">
+			<div style="border:blue solid 10px; width:50px ;height:50px; top: 20px;"></div>
+			<div style="border:red solid 10px; width:50px ;height:50px; left:20px;"></div>
+			<div style="border: green solid 10px; width:50px ;height:50px; left: 20px; top: 20px; "></div>
+			<div style="border: yellow solid 10px; width:50px ;height:50px;"></div>
+		</article>
+
+		<section>
+		<!-- Formular recenzie-->
+		<form >
+			<h1 style="text-align: center;">Pridaj recenziu</h1>
+            <div>
+				<label for="nazov filmu">Názov filmu:</label>
+				<input type="text" name="nazov filmu" placeholder="tu zadajte názov filmu...povinné" style="width: 250px;" required>
+			</div>
+			<div>
+				<label for="meno">Meno:</label>
+				<input type="text" name="meno" style="width: 295px;" >
+		    </div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="tu zadajte váš email...povinné" style="width: 295px;"  required>
+			</div>
+            <div>			
+				
+				<textarea name="textove pole" placeholder="tu zadajte váš text..." class="full-width" rows="10"></textarea>
+				
+			</div>	
+			<div>
+				<label for="datum">Dátum:</label>
+				<input type="date" name="datum">
+			</div>
+            <div>			
+				<label for="hodnotenie">Hodnotenie:</label>
+				0<input type="range" min="0" max="100" step="10" value="0" name="hodnotenie" required>100
+			</div>
+			<div>
+				<p><b>Žáner filmu:</b></p>
+				<label for="zaner filmu">Akčny:</label>
+				<input type="radio" name="zaner filmu" value="akčny">
+				<label for="zaner filmu">Komédia:</label>
+				<input type="radio" name="zaner filmu" value="komédia">
+				<label for="zaner filmu">Fantasy:</label>
+				<input type="radio" name="zaner filmu" value="fantasy">
+				<label for="zaner filmu">Scify:</label>
+				<input type="radio" name="zaner filmu" value="scify">
+			</div>
+			<div>
+			<button type="button">Odoslať</button>
+		    </div>
+			
+		</form>
+	</section>
+
+	
+	
+	</body>
+</html>

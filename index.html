@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hlavna stranka</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+		<!--Stylovanie celej stranky -->
+		<style>
+			main{
+				background-color: cadetblue;
+				padding: 20px;
+			}
+			.hero-image {
+				background-image: url("img/banner.jpeg");
+				height: 600px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+			.hero-text a button {
+				border: none;
+				outline: 0;
+				display: inline-block;
+				padding: 20px 25px;
+				color: black;
+				background-color: #ddd;
+				text-align: center;
+				cursor: pointer;
+				margin-left: 20px;
+				margin-top: 85px;
+            }
+
+			.hero-text button:hover {
+				background-color: #555;
+				color: white;
+			}
+            h1{
+				text-transform: uppercase;
+				text-align: center;
+				text-decoration: underline;
+			}
+			h2{
+				font-family: 'Nerko One', cursive;
+			}
+		
+			
+			
+			
+			a{
+			color: #0000ff;
+			text-transform: uppercase;
+			
+			}
+			
+				
+
+		
+
+			article{
+				width: 431px;
+				text-align: center;
+			}
+			.flex-container{
+				display: flex;
+                flex-direction: row;
+			    justify-content: flex-end;
+
+			}
+			.flex-container>div{
+				background-color: #f1f1f1;
+                padding: 20px;
+                margin: 10px;
+                text-align: center;
+             }
+
+			 article>p::first-letter {
+              font-size: 200%;
+              color: #8A2BE2;
+			  font-weight: bold;
+              }
+
+			
+
+			.floatLeft{
+				float:left;
+			}
+			  
+			.clearFix{
+			clear: both;
+		  }
+		
+		 </style>
+		
+		
+	</head>
+	
+
+	<body>
+		<main>
+	        <!-- Hlavne navigacne menu menu s klikatelnymy elemmentamy domov,rebricek filmov a pridaj recenziu-->
+			<nav class="flex-container">
+				
+				<div><a href="index.html"><b>Domov</b></a></div>
+				<div><a href="rebfilm.html"><b> Rebríček najlepších filmov </b></a></div>
+				<div><a href="add-review.html"><b>Pridaj recenziu </b></a></div>
+				
+			</nav>
+			<!--Banner-->
+			<div class="hero-image">
+				<div class="hero-text">
+				  <h1 style="font-size:50px">Avengers</h1>
+				  <p style="width: 300px; padding-left: 20px; font-family: cursive;">Marvel Studios uvádí super hrdinský tým všech dob Avengers, ve kterém se přestaví ikoničtí super hrdinové – Iron Man, Neuvěřitelný Hulk, Thor, Captain America, Hawkeye a Black Widow. Když se objeví nečekaný nepřítel, který ohrožuje světovou bezpečnost, Nick Fury, ředitel mezinárodní mírové agentury, známé také jako S.H.I.E.L.D., zjistí, že potřebuje tým, aby odvrátil světovou katastrofu. Začíná provádět nábor po celém světě.</p>
+				  <a href="https://www.csfd.cz/film/241997-avengers/prehled/"><button>Detail filmu</button></a>
+				</div>
+			  </div>
+			<br>
+ 
+			<!--Hlavicka-->
+			<header>
+				<h1>~Filmy čo mám rád~</h1>
+			</header>
+            <!--Film1-->
+			<article class="floatLeft">
+				<h2 style="color: red;">CAPTIAN FANTASTIC:</h2>
+				<p>Iný pohľad na svet.<p>
+			</article>
+            <!--Film2-->
+            <article class="floatLeft">
+				<a style="color: green;" href="movie1.html"><h2>BOBULE:</h2></a>
+				<p> Pohodová komédia.</p>
+			</article>
+			<!--Film3-->
+			<article class="floatLeft">
+				<h2 style="color:yellow;">AVENGERS:</h2>
+				<p>Skvelé spracovanie,efekty a ešte sa človek zasmeje.</p>
+		    </article>	
+		    <div class="clearFix"></div>
+		</main>
+	</body>
+</html>
